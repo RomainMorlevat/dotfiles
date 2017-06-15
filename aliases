@@ -5,3 +5,40 @@ alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/download
 
 # Quickly serve the current directory as HTTP
 alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
+
+#### perso ####
+
+# empecher l'ecran de se mettre en veille
+alias ecran='xset -dpms; xset s off'
+# pour réactiver la mise en veille
+alias ecranOn='xset +dpms ; xset s on'
+
+# pour éditer avec yaourt
+export EDITOR="emacs"
+
+# pour se connecter au raspberry pi
+alias raspi='ssh romain@88.183.47.28 -p 1337'
+
+# pour écrire dans mémoir
+alias m='~/.scripts/memoirb.rb'
+
+# icc
+alias color="/usr/bin/xcalib -d :0 .color/icc/lenono-x230-20170430.icm"
+# alias colorext="/usr/bin/xcalib -d :0 .color/icc/lenovo_X230-Dell-U2713HM-DP-lum31-6500K-20161101.icm"
+alias colorext="/usr/bin/xcalib -d :0 .color/icc/x230-dell-u2311h-DP-lum50-20141028.icm"
+
+# pour la config de la souris
+alias souris="exec xbindkeys"
+alias psouris="pkill xbindkeys"
+
+## Le Wagon
+# pour faire la maj des exos
+alias gwag="git pull upstream master -X ours"
+
+# pour revenir à la racine
+alias wr="cd /home/romain/code/RomainMorlevat/fullstack-challenges"
+# racine de zykout
+alias zk="cd /home/romain/code/zykout"
+
+# takeawaytrips v2
+alias tat="cd /home/romain/projets_ruby/takeawaytrips_v2"
